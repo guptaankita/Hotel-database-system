@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Konak</title>
+</head>
+<body>
+<body style="font-family: Trebuchet MS;">
+	<div style="font-weight: bold; font-size: 1.3em; text-align: center;">KONAK
+		PROJECT REPORT</div>
+	<table border="1" width="75%" height=550px>
+		<tr>
+			<td>Title</td>
+			<td>KONAK- A Hotel Management Database</td>
+		</tr>
+		<tr>
+			<td>Authors</td>
+			<td>Ankita Gupta: ankita1@ccs.neu.edu<br> Mansoor Ahmed
+				Khan: khan25@ccs.neu.edu<br> Sahil Khandwala:
+				sakh89@ccs.neu.edu<br>
+			</td>
+		</tr>
+		<tr>
+			<td>Abstract</td>
+			<td>A konak is a hotel management database which enables user to
+				view/book hotel room in any country. The user can search hotels by
+				various criteria like check-in <br> date, check-out date,number
+				of rooms,rating, numbers of childerns and adults.We have user
+				registration facility after which they can book the hotel room from
+				the site. Administrator has various functions like delete registered
+				user,cancel hotel booking and delete review.
+			</td>
+		</tr>
+		<tr>
+			<td>Introduction</td>
+			<td>The purpose was to simplify the hotel booking by allowing
+				the user sitting at the convenience of his home to search hotels
+				that match his requirement from a huge database that contains
+				information about a wide range of hotels and then book a hotel of
+				his choice. Objective of the application are as follows: <br>
+				1.Application through which customers have access to a hotel
+				database and can book and review hotels. <br> 2.Application
+				will be intuitive to use and easy-to-maintain. <br>
+
+				3.Application will be able to handle simultaneous requests from
+				multiple clients. <br> 4.Application will be designed using
+				client server architecture.
+			</td>
+		</tr>
+		<tr>
+			<td>Requirements</td>
+			<td align="center"><img src="Sequence diagram.png"
+				alt="some_text" width="100%" height="500px"></td>
+		</tr>
+		<tr>
+			<td>Design</td>
+			<td align="center"><img src="KONAK-class diagram.png"
+				alt="some_text" width="100%" height="500px"></td>
+
+		</tr>
+		<tr>
+			<td>Implementation</td>
+			<td>We have queried a web service by invoking it through its
+				given API. Passing the required parameters & the hotel search
+				results data was transmitted back in either XML or JSON format. We
+				have set the output type to JSON. We have passed the JSON data
+				extracting only those attributes which are useful for the project.
+				We have implemented the web application in Eclipse IDE using JSF
+				framework, it is a Java specification for building component-based
+				user interfaces for web applications. Thus our front end web pages
+				being developed in JSP pages, our business tier logic was
+				implemented using Java. We have thus cleanly separated our Client
+				layer, Presentation & Business Tier. We have used an open source
+				MySQL(5.1) for storing our data. We have used Navicat tool UI tool
+				for interacting with the database.</td>
+		</tr>
+		<tr>
+			<td>Discussion</td>
+			<td>Konak makes sure that User can perform the following
+				operations like booking a hotel,searching a hotel by the specified
+				criteria, add a review.<br> Administrator can Delete reviews<br>
+				Cancel booking made by a user<br> Delete a user.<br>
+				Examples:<br> 1-User tries to search a hotel :<br> Konak
+				helps user to search a hotel by various parameters like country
+				number of room, number of adults, number of children and so on. If
+				any search parameter that is entered is wrong , then it can't locate
+				the desired hotel.<br> 2-User tries to make a booking :<br>
+				Konak allows user to make a booking in the selected hotel.<br>
+
+				3-User can make payment :<br> Konak allows the user to make
+				payments.<br> 4-User can give reviews :<br> Konak allows
+				the user to give reviews.<br> 5-New users can register to
+				Konak:<br> Konak allows new users to register to Konak.<br>
+
+				6-Administrator delete the reviews in the database:<br> Konak
+				allows administrator to delete the reviews of the hotel.<br>
+
+				7-Administrator tries to delete users in the database :<br>
+
+				Konak allows administrator to delete users of the Konak.<br>
+
+				8-Administrator tries to delete bookings in the database :<br>
+
+				Konak allows administrator to delete booking made by a user of the
+				Konak.<br>
+			</td>
+		</tr>
+		<tr>
+			<td>Conclusion</td>
+			<td>We did not maintain a local data dump & dynamically
+				retrieved the hotel search results using the API. We have
+				implemented hotel booking, reviews, Login management & administrator
+				functions. Thus covering most aspects of our initial objectives &
+				meeting the requirements set by the course. Further work is to
+				professionally develop the website & host the website!</td>
+		</tr>
+		<tr>
+			<td>References</td>
+			<td>1. www.stackoverflow.com<br> 2. www.java2s.com<br>
+				3. www.mykong/jsftutorials.com<br> 4. www.roseindia.net<br>
+				5. www.tiket.com<br> 6. www.programmableweb.com<br> 7.
+				www.expedia.com<br> 8. www.programmerslounge.com<br> 9.
+				www.javacodegeeks.com<br> 10. www.oracledocs.com<br>
+			</td>
+		</tr>
+	</table>
+</body>
+</body>
+</html>
